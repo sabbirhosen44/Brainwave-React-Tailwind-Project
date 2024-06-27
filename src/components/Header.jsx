@@ -1,6 +1,8 @@
 import React from "react";
 import { brainwave } from "../assets";
 import { navigation } from "../constants/index";
+import Button from "../components/Button";
+import ButtonGradient from "../assets/svg/ButtonGradient";
 
 const Header = () => {
   return (
@@ -21,15 +23,24 @@ const Header = () => {
               <a
                 key={item.id}
                 href={item.url}
-                className={` block relative font-code text-2xl  uppercase text-n-1 transition-colors hover:text-color-1  ${
+                className={` block relative font-code text-2xl  uppercase text-n-1/50 transition-colors hover:text-color-1  ${
                   item.onlyMobile ? "lg:hidden" : ""
-                } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold `}
+                } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold lg:leading-5 lg:hover:text-n-1 xl:px-12 `}
               >
                 {item.title}
               </a>
             ))}
           </ul>
         </nav>
+        <a
+          href="#signup"
+          className="button hidden mr-8  text-n-1/50  transition-colors hover:text-n-1 lg:block"
+        >
+          New Accout
+        </a>
+        <Button className="hidden lg:flex " href="#login">
+          Sign In
+        </Button>
       </div>
     </header>
   );
