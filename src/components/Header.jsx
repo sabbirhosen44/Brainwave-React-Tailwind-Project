@@ -1,13 +1,22 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { brainwave } from "../assets";
-import { navigation } from "../constants/index";
-import Button from "../components/Button";
+import { navigation } from "../constants";
+import Button from "./Button";
 import { HamburgerMenu } from "./design/Header";
+import MenuSvg from "../assets/svg/MenuSvg";
 
 const Header = () => {
   const pathName = useLocation();
-  const [openNavigation, setOpenNavigation] = useState();
+  const [openNavigation, setOpenNavigation] = useState(false);
+
+  const toggleNavigation = () => {
+    if (openNavigation) {
+      setOpenNavigation(false);
+    } else {
+      setOpenNavigation(true);
+    }
+  };
 
   return (
     <header
@@ -51,6 +60,14 @@ const Header = () => {
         </a>
         <Button className="hidden lg:flex " href="#login">
           Sign In
+        </Button>
+
+        <Button
+          className="ml-auto lg:hidden"
+          px="px-3"
+          onClick={toggleNavigation}
+        >
+          <MenuSvg openNavigation={openNavigation} />
         </Button>
       </div>
     </header>
