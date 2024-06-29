@@ -5,6 +5,7 @@ import { navigation } from "../constants";
 import Button from "./Button";
 import { HamburgerMenu } from "./design/Header";
 import MenuSvg from "../assets/svg/MenuSvg";
+import { enablePageScroll, disablePageScroll } from "scroll-lock";
 
 const Header = () => {
   const pathName = useLocation();
@@ -13,9 +14,18 @@ const Header = () => {
   const toggleNavigation = () => {
     if (openNavigation) {
       setOpenNavigation(false);
+      enablePageScroll();
     } else {
       setOpenNavigation(true);
+      disablePageScroll();
     }
+  };
+
+  const handleClick = () => {
+    if (!openNavigation) return;
+
+    enablePageScroll();
+    setOpenNavigation(false);
   };
 
   return (
@@ -38,6 +48,7 @@ const Header = () => {
               <a
                 key={item.id}
                 href={item.url}
+                onClick={handleClick}
                 className={` block relative font-code text-2xl  uppercase text-n-1/50 transition-colors hover:text-color-1  ${
                   item.onlyMobile ? "lg:hidden" : ""
                 } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
