@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
+import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import { brainwave } from "../assets";
+import MenuSvg from "../assets/svg/MenuSvg";
 import { navigation } from "../constants";
 import Button from "./Button";
 import { HamburgerMenu } from "./design/Header";
-import MenuSvg from "../assets/svg/MenuSvg";
-import { enablePageScroll, disablePageScroll } from "scroll-lock";
 
 const Header = () => {
   const pathName = useLocation();
