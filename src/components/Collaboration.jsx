@@ -33,7 +33,7 @@ const Collaboration = () => {
             {collabText}
           </p>
 
-          <div className="relative left-1/2 rounded-full flex w-[22rem] aspect-square border border-n-6 -translate-x-1/2 scale:75 md:scale-100">
+          <div className="relative rounded-full left-1/2  flex w-[22rem] aspect-square border border-n-6 -translate-x-1/2 scale:75 md:scale-100">
             <div className="rounded-full flex w-60 aspect-square m-auto border border-n-6">
               <div className="rounded-full flex w-[6rem] aspect-square  p-[0.2rem] bg-conic-gradient m-auto ">
                 <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
