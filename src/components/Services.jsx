@@ -1,9 +1,14 @@
-import Heading from "./Heading";
-import Section from "./Section";
 import { check, service1, service2, service3 } from "../assets";
 import { brainwaveServices, brainwaveServicesIcons } from "../constants";
 import Generating from "./Generating";
-import { Gradient, PhotoChatMessage } from "./design/Services";
+import Heading from "./Heading";
+import Section from "./Section";
+import {
+  Gradient,
+  PhotoChatMessage,
+  VideoBar,
+  VideoChatMessage,
+} from "./design/Services";
 
 const Services = () => {
   return (
@@ -97,8 +102,17 @@ const Services = () => {
                   ))}
                 </ul>
               </div>
-              <div>
-                <img src={service3} />
+
+              <div className="relative h-[20rem] bg-n-8 overflow-hidden rounded-xl md:h-[25rem]">
+                <img
+                  src={service3}
+                  className="w-full h-full object-cover"
+                  width={520}
+                  height={400}
+                  alt="Scary Robot"
+                />
+                <VideoChatMessage />
+                <VideoBar />
               </div>
             </div>
           </div>
