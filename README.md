@@ -1,8 +1,27 @@
-# React + Vite
+# Brainwave - Modern UI/UX Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Brainwave Banner](images/banner.png)
 
-Currently, two official plugins are available:
+### Introduction
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Brainwave** is a modern UI/UX website built with React.js and Tailwind CSS. It showcases advanced UI/UX principles, including parallax animations, complex geometry, and trendy design elements. This repository complements the in-depth tutorial available on our YouTube channel, JavaScript Mastery. 
+
+**Want to learn how to build this?** Check out the tutorial : https://youtu.be/B91wc5dCEBA?si=-0xjVR6pUK9qmrPk
+
+### Tech Stack
+
+* **Vite:** Build tool for fast development
+* **React.js:** JavaScript library for building user interfaces
+* **Tailwind CSS:** Utility-first CSS framework
+
+### Features
+
+* Beautiful and interactive sections
+* Parallax animations
+* Complex UI geometry
+* Modern UI trends (bento grids, etc.)
+* Cool gradients
+* Responsive design
+
+
+
