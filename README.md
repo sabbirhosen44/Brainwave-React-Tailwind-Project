@@ -1,6 +1,6 @@
 # Brainwave - Modern UI/UX Website
 
-![Brainwave Banner](https://shorturl.at/JghO5)
+![Brainwave Banner](./src/assets/banner.png)
 
 ### Introduction
 
